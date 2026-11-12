@@ -1,0 +1,95 @@
+---
+key: privacy
+slug: privacy
+title: Informativa sulla privacy
+description: Come CriticalPrep tratta i dati personali: app, AI, abbonamento, pagamenti e sito.
+---
+<div class="prose">
+<h1>Informativa sulla privacy</h1>
+<p class="meta">{{t.last_updated}} {{c.legal_last_updated}}</p>
+
+<div class="legal-check" data-label="{{t.legal_check}}">
+  <p>Questa informativa è una bozza preparata a partire dal funzionamento reale del servizio. Prima della pubblicazione va verificata da un legale per la conformità al GDPR (Regolamento UE 2016/679) e al Codice privacy italiano: in particolare dati del titolare, basi giuridiche, tempi di conservazione, trasferimenti extra-UE e nomina dei responsabili del trattamento.</p>
+</div>
+
+<h2>1. Titolare del trattamento</h2>
+<p>{{c.owner_name}}, {{c.owner_address}}, {{t.footer_vat}} {{c.owner_vat}}.<br>
+Contatto per la privacy: <a href="mailto:{{c.privacy_email}}">{{c.privacy_email}}</a>.</p>
+
+<h2>2. In breve</h2>
+<ul>
+  <li>Le tue campagne, la wiki, gli appunti importati e le registrazioni restano sul tuo Mac.</li>
+  <li>La trascrizione audio delle sessioni avviene sul tuo Mac.</li>
+  <li>Se usi l'abbonamento {{c.subscription_name}}, i testi inviati all'AI passano dal nostro server <strong>solo per essere elaborati e non vengono salvati</strong>.</li>
+  <li>Il server conserva soltanto ciò che serve a far funzionare la licenza: licenza, Mac attivi, conteggi dei consumi mensili e, per {{c.ip_retention_days}} giorni, gli indirizzi IP.</li>
+  <li>Il pagamento è gestito da Lemon Squeezy: non vediamo né conserviamo i dati della tua carta.</li>
+  <li>Questo sito non usa cookie né strumenti di tracciamento.</li>
+</ul>
+
+<h2>3. Dati trattati nell'app</h2>
+<p>{{c.product_name}} salva i contenuti che crei o importi (campagne, schede, appunti, file importati, piani di sessione, registrazioni, trascrizioni) nella memoria locale del tuo Mac. Non li riceviamo e non abbiamo accesso a essi.</p>
+<p><strong>Registrazione delle sessioni su Discord.</strong> La registrazione usa un bot Discord creato e configurato da te; l'audio di ogni partecipante viene salvato e trascritto sul tuo Mac. Quando registri una sessione sei tu a trattare la voce degli altri giocatori: devi informarli e ottenere il loro consenso prima di registrare. L'uso del bot è soggetto anche alle condizioni di Discord.</p>
+<div class="legal-check" data-label="{{t.legal_check}}">
+  <p>Valutare come formulare il ruolo del Game Master rispetto alle voci registrate degli altri giocatori (esenzione per uso personale/domestico, art. 2 GDPR, o altra qualificazione) e se fornire un modello di avviso per i giocatori.</p>
+</div>
+
+<h2>4. Modalità AI</h2>
+<div class="table-wrap">
+<table>
+  <thead><tr><th scope="col">Modalità</th><th scope="col">Dove vanno i testi</th><th scope="col">Ruolo del titolare</th></tr></thead>
+  <tbody>
+    <tr><td>AI locale (Ollama)</td><td>Restano sul tuo Mac.</td><td>Nessun trattamento da parte nostra.</td></tr>
+    <tr><td>Apple Intelligence</td><td>Elaborati da Apple secondo le sue condizioni (sul dispositivo o tramite i servizi di Apple).</td><td>Nessun trattamento da parte nostra.</td></tr>
+    <tr><td>Chiave API personale</td><td>Inviati direttamente dal tuo Mac al fornitore che hai scelto, con la tua chiave e secondo le sue condizioni.</td><td>Nessun trattamento da parte nostra.</td></tr>
+    <tr><td>{{c.subscription_name}}</td><td>Inviati al nostro server ({{c.ai_proxy_host}}), che li inoltra al fornitore AI e ti restituisce la risposta.</td><td>Vedi sezione 5.</td></tr>
+  </tbody>
+</table>
+</div>
+
+<h2>5. Abbonamento {{c.subscription_name}}</h2>
+<h3>Testi inviati all'AI</h3>
+<p>I testi che l'app invia all'AI (ad esempio parti delle tue schede o della trascrizione di una sessione) passano dal nostro server soltanto per essere inoltrati al fornitore AI e restituirti la risposta. Il server <strong>non salva</strong> né i testi inviati né le risposte, e non li usa per altri scopi.</p>
+<p>Il fornitore AI utilizzato è {{c.ai_provider}}, che tratta i testi per nostro conto secondo le proprie condizioni (<a href="{{c.ai_provider_privacy_url}}">informativa del fornitore</a>). Il server è ospitato da {{c.hosting_provider}} ({{c.hosting_region}}).</p>
+<div class="legal-check" data-label="{{t.legal_check}}">
+  <p>Indicare il fornitore AI e l'hosting definitivi, verificare se conservano i dati (ad esempio per controlli anti-abuso), stipulare con entrambi un accordo di trattamento (DPA, art. 28 GDPR) e, se i dati escono dallo Spazio economico europeo, indicare la garanzia applicata (decisione di adeguatezza, EU-US Data Privacy Framework o clausole contrattuali standard).</p>
+</div>
+
+<h3>Dati conservati dal server</h3>
+<div class="table-wrap">
+<table>
+  <thead><tr><th scope="col">Dato</th><th scope="col">Perché</th><th scope="col">Per quanto</th></tr></thead>
+  <tbody>
+    <tr><td>Licenza (chiave e stato dell'abbonamento ricevuto da Lemon Squeezy)</td><td>Verificare che l'abbonamento sia attivo.</td><td>Per la durata dell'abbonamento e poi per il tempo richiesto dalla legge.</td></tr>
+    <tr><td>Mac attivi (un identificativo generato dall'app per ciascun Mac, al massimo {{c.max_macs}})</td><td>Applicare il limite di {{c.max_macs}} Mac per licenza.</td><td>Finché il Mac resta attivo.</td></tr>
+    <tr><td>Conteggi dei consumi mensili</td><td>Applicare il consumo mensile incluso.</td><td>Il conteggio si azzera ogni mese; lo storico aggregato è conservato per [N mesi].</td></tr>
+    <tr><td>Indirizzi IP</td><td>Prevenire abusi e condivisione della licenza, sicurezza del servizio.</td><td>{{c.ip_retention_days}} giorni, poi cancellati.</td></tr>
+  </tbody>
+</table>
+</div>
+<p>Le richieste fra l'app e il server sono firmate dal Mac e viaggiano cifrate (HTTPS).</p>
+
+<h2>6. Pagamenti</h2>
+<p>Gli acquisti avvengono tramite <a href="https://www.lemonsqueezy.com">Lemon Squeezy</a>, che agisce come <em>merchant of record</em>: è il venditore nei tuoi confronti e tratta come titolare autonomo i dati di pagamento e di fatturazione (<a href="https://www.lemonsqueezy.com/privacy">informativa di Lemon Squeezy</a>). Da Lemon Squeezy riceviamo nome, email, paese, stato dell'ordine e della licenza; non riceviamo i dati della carta.</p>
+
+<h2>7. Supporto via email</h2>
+<p>Se ci scrivi, usiamo il tuo indirizzo e il contenuto del messaggio solo per risponderti e li conserviamo per [24 mesi] dall'ultima comunicazione.</p>
+
+<h2>8. Questo sito</h2>
+<p>Il sito non usa cookie, non usa strumenti di analisi o tracciamento e non carica risorse da terze parti. Il fornitore di hosting del sito può registrare dati tecnici (come l'indirizzo IP) nei log del server per motivi di sicurezza.</p>
+
+<h2>9. Basi giuridiche</h2>
+<ul>
+  <li>Esecuzione del contratto (art. 6.1.b GDPR): gestione della licenza, del consumo mensile e dell'elaborazione AI richiesta da te.</li>
+  <li>Legittimo interesse (art. 6.1.f): prevenzione degli abusi e sicurezza (indirizzi IP per {{c.ip_retention_days}} giorni).</li>
+  <li>Obblighi di legge (art. 6.1.c): conservazione dei dati richiesti dalla normativa.</li>
+</ul>
+
+<h2>10. I tuoi diritti</h2>
+<p>Puoi chiedere accesso, rettifica, cancellazione, limitazione, portabilità e opporti al trattamento basato sul legittimo interesse scrivendo a <a href="mailto:{{c.privacy_email}}">{{c.privacy_email}}</a>. Hai anche il diritto di proporre reclamo al <a href="https://www.garanteprivacy.it">Garante per la protezione dei dati personali</a> o all'autorità del tuo paese.</p>
+
+<h2>11. Minori</h2>
+<p>Il servizio in abbonamento è rivolto a persone maggiorenni o che abbiano l'età per concludere contratti nel proprio paese.</p>
+
+<h2>12. Modifiche</h2>
+<p>Se cambia qualcosa di rilevante aggiorneremo questa pagina e la data in alto e, per gli abbonati, lo comunicheremo via email.</p>
+</div>

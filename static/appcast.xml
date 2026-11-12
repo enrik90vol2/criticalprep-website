@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Feed degli aggiornamenti Sparkle per {{c.product_name}}.
+  URL pubblico: {{c.site_url}}/appcast.xml  (da indicare in Info.plist come SUFeedURL)
+
+  Per pubblicare una versione:
+  1. Firma e autentica (notarize) il DMG, poi caricalo su GitHub Releases.
+  2. Genera la firma EdDSA del file con lo strumento di Sparkle:
+       ./bin/sign_update CriticalPrep-1.0.0.dmg
+     (la chiave pubblica corrispondente va in Info.plist come SUPublicEDKey).
+     In alternativa ./bin/generate_appcast <cartella-dei-dmg> genera l'intero <item>.
+  3. Copia il modello qui sotto dentro <channel>, sopra gli altri <item> (il più recente in cima),
+     e compila versione, data, URL, lunghezza in byte e firma.
+  4. Aggiungi la stessa versione in content/changelog.json e rigenera il sito.
+
+  Modello di <item>:
+  <item>
+    <title>Versione 1.0.0</title>
+    <pubDate>Mon, 01 Dec 2026 10:00:00 +0100</pubDate>
+    <sparkle:version>100</sparkle:version>                 (CFBundleVersion)
+    <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
+    <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+    <sparkle:releaseNotesLink xml:lang="it">{{c.site_url}}/it/novita/</sparkle:releaseNotesLink>
+    <sparkle:releaseNotesLink xml:lang="en">{{c.site_url}}/en/changelog/</sparkle:releaseNotesLink>
+    <enclosure
+      url="https://github.com/UTENTE/REPOSITORY/releases/download/v1.0.0/CriticalPrep.dmg"
+      length="0"
+      type="application/octet-stream"
+      sparkle:edSignature="FIRMA-EDDSA" />
+  </item>
+-->
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>{{c.product_name}}</title>
+    <link>{{c.site_url}}/appcast.xml</link>
+    <description>{{c.product_name}} updates</description>
+    <language>en</language>
+  </channel>
+</rss>

@@ -1,0 +1,41 @@
+{
+  "_readme": "Unico file da modificare per dominio, email, prezzi, link e dati del titolare. I valori tra [parentesi quadre] sono SEGNAPOSTO: `python3 build.py` li elenca, `python3 build.py --strict` fallisce finché ne resta qualcuno. Un valore può essere una stringa oppure {\"it\": ..., \"en\": ...}.",
+
+  "product_name": "CriticalPrep",
+  "subscription_name": "CriticalPrep AI",
+
+  "domain": "criticalprep.app",
+  "site_url": "https://criticalprep.app",
+  "ai_proxy_host": "ai.criticalprep.app",
+  "support_email": "supporto@criticalprep.app",
+  "privacy_email": "supporto@criticalprep.app",
+
+  "owner_name": "[Nome e cognome / Ragione sociale del titolare]",
+  "owner_address": "[Indirizzo completo del titolare]",
+  "owner_vat": "[Partita IVA]",
+  "owner_country": { "it": "Italia", "en": "Italy" },
+  "governing_law": { "it": "[legge italiana — da confermare]", "en": "[Italian law — to be confirmed]" },
+  "court": { "it": "[Foro competente — da confermare]", "en": "[Competent court — to be confirmed]" },
+
+  "price_monthly": { "it": "[9,99 €]", "en": "[€9.99]" },
+  "price_note": { "it": "[al mese, IVA inclusa dove applicabile]", "en": "[per month, VAT included where applicable]" },
+  "monthly_allowance": { "it": "[circa N richieste AI / N token al mese]", "en": "[about N AI requests / N tokens per month]" },
+  "max_macs": "2",
+  "checkout_url": "https://criticalprep.lemonsqueezy.com/buy/[VARIANT-ID]",
+  "customer_portal_url": "https://[negozio].lemonsqueezy.com/billing",
+  "refund_window_days": "[14]",
+
+  "ai_provider": "[Fornitore AI usato dal proxy, es. Anthropic / OpenAI]",
+  "ai_provider_privacy_url": "[https://url-privacy-del-fornitore-ai]",
+  "hosting_provider": "[Hosting del proxy AI, es. Cloudflare Workers / Fly.io]",
+  "hosting_region": { "it": "[Regione dei server, es. UE]", "en": "[Server region, e.g. EU]" },
+  "ip_retention_days": "7",
+
+  "app_version": "[1.0.0]",
+  "min_macos": "[macOS 14 Sonoma]",
+  "download_url": "https://github.com/[utente]/[repository]/releases/latest/download/CriticalPrep.dmg",
+  "releases_url": "https://github.com/[utente]/[repository]/releases",
+  "dmg_size": "[~40 MB]",
+
+  "legal_last_updated": { "it": "[gg mese aaaa]", "en": "[Month dd, yyyy]" }
+}

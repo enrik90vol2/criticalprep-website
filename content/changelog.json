@@ -1,0 +1,4 @@
+{
+  "_readme": "Una voce per versione, la più recente in cima. Esempio da copiare in entries: {\"version\": \"1.0.0\", \"date\": \"2026-12-01\", \"notes\": {\"it\": [\"Prima versione pubblica.\"], \"en\": [\"First public release.\"]}}. Le note possono contenere HTML e {{c.*}}. Ricordarsi di aggiungere la stessa versione in static/appcast.xml.",
+  "entries": []
+}

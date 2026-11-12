@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy policy · CriticalPrep</title>
+  <meta name="description" content="How CriticalPrep handles personal data: app, AI, subscription, payments and website.">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f7f5f0" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#16141a" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="/img/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/site.css">
+  <link rel="alternate" hreflang="it" href="https://criticalprep.app/it/privacy/">
+  <link rel="alternate" hreflang="en" href="https://criticalprep.app/en/privacy/">
+  <link rel="alternate" hreflang="x-default" href="https://criticalprep.app/">
+  <meta property="og:title" content="Privacy policy · CriticalPrep">
+  <meta property="og:description" content="How CriticalPrep handles personal data: app, AI, subscription, payments and website.">
+  <meta property="og:type" content="website">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="/en/" aria-label="CriticalPrep — Home">
+        <img src="/img/icon.svg" alt="" width="32" height="32">
+        <span>CriticalPrep</span>
+      </a>
+      <nav class="main-nav" aria-label="Main menu">
+        <ul><li><a href="/en/">Home</a></li><li><a href="/en/pricing/">Pricing</a></li><li><a href="/en/download/">Download</a></li><li><a href="/en/guides/">Guides</a></li><li><a href="/en/changelog/">What&#x27;s new</a></li><li><a href="/en/support/">Support</a></li></ul>
+      </nav>
+      <ul class="lang-switch" aria-label="Language"><li><a href="/it/privacy/" hreflang="it" lang="it" aria-label="Leggi questa pagina in italiano">IT</a></li><li><span aria-current="true" lang="en">EN</span></li></ul>
+    </div>
+  </header>
+
+  <main id="main" class="wrap page-privacy" tabindex="-1">
+
+<div class="prose">
+<h1>Privacy policy</h1>
+<p class="meta">Last updated: <span class="ph">[Month dd, yyyy]</span></p>
+
+<div class="legal-check" data-label="To be reviewed by a lawyer">
+  <p>This policy is a draft based on how the service actually works. Before publishing it must be reviewed by a lawyer for compliance with the GDPR (EU Regulation 2016/679) and Italian privacy law: in particular the controller's details, legal bases, retention periods, transfers outside the EU and the appointment of processors. The Italian version is the reference text.</p>
+</div>
+
+<h2>1. Data controller</h2>
+<p><span class="ph">[Nome e cognome / Ragione sociale del titolare]</span>, <span class="ph">[Indirizzo completo del titolare]</span>, VAT no. <span class="ph">[Partita IVA]</span>.<br>
+Privacy contact: <a href="mailto:supporto@criticalprep.app">supporto@criticalprep.app</a>.</p>
+
+<h2>2. In short</h2>
+<ul>
+  <li>Your campaigns, wiki, imported notes and recordings stay on your Mac.</li>
+  <li>Audio transcription of sessions happens on your Mac.</li>
+  <li>If you use the CriticalPrep AI subscription, text sent to the AI passes through our server <strong>only to be processed and is not stored</strong>.</li>
+  <li>The server keeps only what the license needs to work: license, active Macs, monthly usage counts and, for 7 days, IP addresses.</li>
+  <li>Payment is handled by Lemon Squeezy: we never see or store your card details.</li>
+  <li>This website uses no cookies and no tracking tools.</li>
+</ul>
+
+<h2>3. Data handled in the app</h2>
+<p>CriticalPrep stores the content you create or import (campaigns, entries, notes, imported files, session plans, recordings, transcripts) in your Mac's local storage. We do not receive it and have no access to it.</p>
+<p><strong>Recording sessions on Discord.</strong> Recording uses a Discord bot you create and configure; each participant's audio is saved and transcribed on your Mac. When you record a session, you are the one handling the other players' voices: you must inform them and get their consent before recording. Using the bot is also subject to Discord's terms.</p>
+<div class="legal-check" data-label="To be reviewed by a lawyer">
+  <p>Assess how to describe the Game Master's role regarding other players' recorded voices (household exemption, Art. 2 GDPR, or another qualification) and whether to provide a notice template for players.</p>
+</div>
+
+<h2>4. AI modes</h2>
+<div class="table-wrap">
+<table>
+  <thead><tr><th scope="col">Mode</th><th scope="col">Where your text goes</th><th scope="col">Our role</th></tr></thead>
+  <tbody>
+    <tr><td>Local AI (Ollama)</td><td>Stays on your Mac.</td><td>No processing by us.</td></tr>
+    <tr><td>Apple Intelligence</td><td>Processed by Apple under its terms (on device or through Apple's services).</td><td>No processing by us.</td></tr>
+    <tr><td>Personal API key</td><td>Sent directly from your Mac to the provider you chose, with your key and under its terms.</td><td>No processing by us.</td></tr>
+    <tr><td>CriticalPrep AI</td><td>Sent to our server (ai.criticalprep.app), which forwards it to the AI provider and returns the answer to you.</td><td>See section 5.</td></tr>
+  </tbody>
+</table>
+</div>
+
+<h2>5. CriticalPrep AI subscription</h2>
+<h3>Text sent to the AI</h3>
+<p>The text the app sends to the AI (for example parts of your entries or of a session transcript) passes through our server only to be forwarded to the AI provider and to return the answer to you. The server <strong>does not store</strong> the text sent or the answers, and does not use them for any other purpose.</p>
+<p>The AI provider used is <span class="ph">[Fornitore AI usato dal proxy, es. Anthropic / OpenAI]</span>, which processes the text on our behalf under its own terms (<a href="[https://url-privacy-del-fornitore-ai]">provider's privacy policy</a>). The server is hosted by <span class="ph">[Hosting del proxy AI, es. Cloudflare Workers / Fly.io]</span> (<span class="ph">[Server region, e.g. EU]</span>).</p>
+<div class="legal-check" data-label="To be reviewed by a lawyer">
+  <p>Name the final AI provider and host, check whether they retain data (for example for abuse monitoring), sign a data processing agreement (DPA, Art. 28 GDPR) with both and, if data leaves the European Economic Area, state the safeguard used (adequacy decision, EU-US Data Privacy Framework or standard contractual clauses).</p>
+</div>
+
+<h3>Data kept by the server</h3>
+<div class="table-wrap">
+<table>
+  <thead><tr><th scope="col">Data</th><th scope="col">Why</th><th scope="col">How long</th></tr></thead>
+  <tbody>
+    <tr><td>License (key and subscription status received from Lemon Squeezy)</td><td>Check that the subscription is active.</td><td>For the life of the subscription, then as long as required by law.</td></tr>
+    <tr><td>Active Macs (an identifier generated by the app for each Mac, at most 2)</td><td>Enforce the limit of 2 Macs per license.</td><td>As long as the Mac stays active.</td></tr>
+    <tr><td>Monthly usage counts</td><td>Enforce the included monthly allowance.</td><td>The count resets every month; aggregated history is kept for <span class="ph">[N months]</span>.</td></tr>
+    <tr><td>IP addresses</td><td>Prevent abuse and license sharing, service security.</td><td>7 days, then deleted.</td></tr>
+  </tbody>
+</table>
+</div>
+<p>Requests between the app and the server are signed by your Mac and encrypted in transit (HTTPS).</p>
+
+<h2>6. Payments</h2>
+<p>Purchases go through <a href="https://www.lemonsqueezy.com">Lemon Squeezy</a>, acting as <em>merchant of record</em>: it is the seller to you and processes payment and billing data as an independent controller (<a href="https://www.lemonsqueezy.com/privacy">Lemon Squeezy privacy policy</a>). From Lemon Squeezy we receive name, email, country, order and license status; we do not receive card details.</p>
+
+<h2>7. Email support</h2>
+<p>If you write to us, we use your address and message only to reply, and keep them for <span class="ph">[24 months]</span> after the last exchange.</p>
+
+<h2>8. This website</h2>
+<p>The website uses no cookies, no analytics or tracking tools, and loads no third-party resources. The website's hosting provider may log technical data (such as IP addresses) in server logs for security purposes.</p>
+
+<h2>9. Legal bases</h2>
+<ul>
+  <li>Performance of a contract (Art. 6(1)(b) GDPR): managing the license, the monthly allowance and the AI processing you request.</li>
+  <li>Legitimate interest (Art. 6(1)(f)): abuse prevention and security (IP addresses for 7 days).</li>
+  <li>Legal obligations (Art. 6(1)(c)): retaining data required by law.</li>
+</ul>
+
+<h2>10. Your rights</h2>
+<p>You can request access, rectification, erasure, restriction and portability, and object to processing based on legitimate interest, by writing to <a href="mailto:supporto@criticalprep.app">supporto@criticalprep.app</a>. You also have the right to lodge a complaint with the Italian Data Protection Authority (<a href="https://www.garanteprivacy.it">Garante per la protezione dei dati personali</a>) or with the authority of your country.</p>
+
+<h2>11. Minors</h2>
+<p>The subscription service is meant for adults or people old enough to enter into contracts in their country.</p>
+
+<h2>12. Changes</h2>
+<p>If anything significant changes we will update this page and the date at the top and, for subscribers, notify you by email.</p>
+</div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <p class="brand-small"><img src="/img/icon.svg" alt="" width="24" height="24"> CriticalPrep</p>
+        <p>The Game Master's assistant for macOS: prepare, play and remember your campaigns.</p>
+        <p class="no-tracking">This site uses no cookies and no tracking tools.</p>
+      </div>
+      <nav aria-label="Useful links">
+        <ul class="footer-links"><li><a href="/en/pricing/">Pricing</a></li><li><a href="/en/download/">Download</a></li><li><a href="/en/guides/">Guides</a></li><li><a href="/en/changelog/">What&#x27;s new</a></li><li><a href="/en/support/">Support</a></li><li><a href="/en/privacy/" aria-current="page">Privacy</a></li><li><a href="/en/terms/">Terms of use</a></li><li><a href="/en/refunds/">Refunds</a></li></ul>
+      </nav>
+      <address>
+        <strong>Owner</strong><br>
+        <span class="ph">[Nome e cognome / Ragione sociale del titolare]</span><br>
+        <span class="ph">[Indirizzo completo del titolare]</span><br>
+        VAT no. <span class="ph">[Partita IVA]</span><br>
+        <a href="mailto:supporto@criticalprep.app">supporto@criticalprep.app</a>
+      </address>
+    </div>
+    <div class="wrap footer-bottom">
+      <p>© 2026 <span class="ph">[Nome e cognome / Ragione sociale del titolare]</span>. Mac, macOS and Apple Intelligence are trademarks of Apple Inc. Discord is a trademark of Discord Inc. CriticalPrep is not affiliated with these companies.</p>
+    </div>
+  </footer>
+</body>
+</html>

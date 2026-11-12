@@ -1,0 +1,31 @@
+---
+key: download
+slug: download
+title: Download
+description: Scarica CriticalPrep per macOS e controlla i requisiti di sistema.
+---
+<h1>Scarica {{c.product_name}}</h1>
+<p class="lead">Versione {{c.app_version}} · file DMG · {{c.dmg_size}}</p>
+<div class="actions">
+  <a class="btn btn-primary" href="{{c.download_url}}">Scarica il DMG</a>
+  <a class="btn" href="{{c.releases_url}}">Tutte le versioni</a>
+  <a class="btn" href="{{u.changelog}}">Novità</a>
+</div>
+
+<div class="prose">
+  <h2>Requisiti</h2>
+  <ul>
+    <li><strong>Sistema:</strong> {{c.min_macos}} o successivo.</li>
+    <li><strong>Mac:</strong> Apple silicon consigliato. Per l'AI locale con Ollama serve memoria sufficiente per il modello scelto; Apple Intelligence richiede un Mac compatibile.</li>
+    <li><strong>Registrazione delle sessioni su Discord (facoltativa):</strong> <a href="https://nodejs.org">Node.js</a> 20.9 o successivo e un bot Discord creato da te (l'app ti guida nella configurazione).</li>
+    <li><strong>Connessione a Internet:</strong> serve solo per l'abbonamento {{c.subscription_name}}, per la chiave API personale e per gli aggiornamenti.</li>
+  </ul>
+
+  <h2>Installazione</h2>
+  <ol>
+    <li>Apri il file DMG scaricato.</li>
+    <li>Trascina {{c.product_name}} nella cartella Applicazioni.</li>
+    <li>Apri l'app dalla cartella Applicazioni. L'app è firmata e autenticata da Apple, quindi macOS la apre normalmente.</li>
+  </ol>
+  <p>{{c.product_name}} è distribuita direttamente da questo sito e non dal Mac App Store. Gli aggiornamenti arrivano dall'app stessa.</p>
+</div>

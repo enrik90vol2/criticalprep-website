@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="{{lang}}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{page.title}} · {{c.product_name}}</title>
+  <meta name="description" content="{{page.description}}">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f7f5f0" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#16141a" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="/img/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/site.css">
+  {{{alternates}}}
+  <meta property="og:title" content="{{page.title}} · {{c.product_name}}">
+  <meta property="og:description" content="{{page.description}}">
+  <meta property="og:type" content="website">
+</head>
+<body>
+  <a class="skip-link" href="#main">{{t.skip_link}}</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="{{u.home}}" aria-label="{{c.product_name}} — {{t.nav_home}}">
+        <img src="/img/icon.svg" alt="" width="32" height="32">
+        <span>{{c.product_name}}</span>
+      </a>
+      <nav class="main-nav" aria-label="{{t.nav_label}}">
+        <ul>{{{nav}}}</ul>
+      </nav>
+      <ul class="lang-switch" aria-label="{{t.lang_label}}">{{{lang_switch}}}</ul>
+    </div>
+  </header>
+
+  <main id="main" class="wrap page-{{page.key}}" tabindex="-1">
+{{{content}}}
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <p class="brand-small"><img src="/img/icon.svg" alt="" width="24" height="24"> {{c.product_name}}</p>
+        <p>{{t.footer_tagline}}</p>
+        <p class="no-tracking">{{t.footer_no_tracking}}</p>
+      </div>
+      <nav aria-label="{{t.footer_nav_label}}">
+        <ul class="footer-links">{{{footer_links}}}</ul>
+      </nav>
+      <address>
+        <strong>{{t.footer_owner}}</strong><br>
+        {{c.owner_name}}<br>
+        {{c.owner_address}}<br>
+        {{t.footer_vat}} {{c.owner_vat}}<br>
+        <a href="mailto:{{c.support_email}}">{{c.support_email}}</a>
+      </address>
+    </div>
+    <div class="wrap footer-bottom">
+      <p>© 2026 {{c.owner_name}}. {{t.footer_trademarks}}</p>
+    </div>
+  </footer>
+</body>
+</html>

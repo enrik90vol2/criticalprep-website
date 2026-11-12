@@ -1,0 +1,62 @@
+---
+key: pricing
+slug: prezzi
+title: Prezzi
+description: CriticalPrep è gratuito con AI locale, Apple Intelligence o la tua chiave API. L'abbonamento CriticalPrep AI include un consumo mensile di AI su 2 Mac.
+---
+<h1>Prezzi</h1>
+<p class="lead">L'app è la stessa per tutti. Cambia solo chi fornisce l'AI.</p>
+
+<div class="grid-3">
+  <div class="card">
+    <span class="badge">Gratis</span>
+    <h2>AI locale</h2>
+    <p class="price">0 €</p>
+    <ul class="checklist">
+      <li>Modelli che girano sul tuo Mac con <a href="https://ollama.com">Ollama</a></li>
+      <li>Nessun testo esce dal computer</li>
+      <li>Serve un Mac con memoria sufficiente per il modello scelto</li>
+    </ul>
+  </div>
+  <div class="card">
+    <span class="badge">Gratis</span>
+    <h2>Apple Intelligence o chiave API</h2>
+    <p class="price">0 €</p>
+    <ul class="checklist">
+      <li>Apple Intelligence sui Mac compatibili</li>
+      <li>Oppure la tua chiave API personale: paghi direttamente il fornitore</li>
+      <li>I testi vanno dal tuo Mac al fornitore scelto, senza passare da noi</li>
+    </ul>
+  </div>
+  <div class="card highlight">
+    <span class="badge">Abbonamento</span>
+    <h2>{{c.subscription_name}}</h2>
+    <p class="price">{{c.price_monthly}}</p>
+    <p class="small">{{c.price_note}}</p>
+    <ul class="checklist">
+      <li>Nessuna configurazione: attivi la licenza e funziona</li>
+      <li>Licenza valida su {{c.max_macs}} Mac</li>
+      <li>Consumo mensile incluso: {{c.monthly_allowance}}</li>
+      <li>Il consumo si azzera ogni mese</li>
+      <li>Disdici quando vuoi dal portale clienti</li>
+    </ul>
+    <div class="actions"><a class="btn btn-primary" href="{{c.checkout_url}}">Abbonati</a></div>
+    <p class="small">Pagamento sicuro gestito da Lemon Squeezy.</p>
+  </div>
+</div>
+
+<div class="legal-check" data-label="{{t.tax_check}}">
+  <p>Prezzo, IVA e regime fiscale (ricavi incassati tramite Lemon Squeezy come merchant of record) da verificare con un commercialista.</p>
+</div>
+
+<h2>Domande sull'abbonamento</h2>
+<dl>
+  <dt><strong>Chi gestisce il pagamento?</strong></dt>
+  <dd><p>Lemon Squeezy, che agisce come <em>merchant of record</em>: è il venditore che compare sulla ricevuta e si occupa di pagamento, fatture e IVA.</p></dd>
+  <dt><strong>Cosa succede quando finisce il consumo mensile?</strong></dt>
+  <dd><p>Le funzioni AI dell'abbonamento si fermano fino all'inizio del mese successivo. Nel frattempo puoi continuare con l'AI locale, Apple Intelligence o una chiave API. Tutto il resto dell'app continua a funzionare.</p></dd>
+  <dt><strong>Posso usarlo su più Mac?</strong></dt>
+  <dd><p>Sì, su {{c.max_macs}} Mac contemporaneamente. Puoi liberare un Mac dalle impostazioni dell'app per attivarne un altro.</p></dd>
+  <dt><strong>Come disdico?</strong></dt>
+  <dd><p>Dal <a href="{{c.customer_portal_url}}">portale clienti di Lemon Squeezy</a>. L'abbonamento resta attivo fino alla fine del periodo già pagato. Vedi anche la pagina <a href="{{u.refunds}}">Rimborsi</a>.</p></dd>
+</dl>

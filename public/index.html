@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CriticalPrep</title>
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" href="/img/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/site.css">
+  <link rel="alternate" hreflang="it" href="https://criticalprep.app/it/">
+  <link rel="alternate" hreflang="en" href="https://criticalprep.app/en/">
+  <script>
+    // Sceglie la lingua dal browser: la prima tra quelle preferite che sia it o en; altrimenti italiano.
+    (function () {
+      var prefs = navigator.languages || [navigator.language || "it"];
+      var lang = "it";
+      for (var i = 0; i < prefs.length; i++) {
+        var code = String(prefs[i]).toLowerCase().slice(0, 2);
+        if (code === "it" || code === "en") { lang = code; break; }
+      }
+      location.replace("/" + lang + "/" + location.hash);
+    })();
+  </script>
+  <noscript><meta http-equiv="refresh" content="0; url=/it/"></noscript>
+</head>
+<body>
+  <main class="wrap root-choose">
+    <h1><img src="/img/icon.svg" alt="" width="48" height="48"> CriticalPrep</h1>
+    <p><a href="/it/" lang="it" hreflang="it">Continua in italiano</a></p>
+    <p><a href="/en/" lang="en" hreflang="en">Continue in English</a></p>
+  </main>
+</body>
+</html>

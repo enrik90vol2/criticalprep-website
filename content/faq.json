@@ -1,0 +1,71 @@
+{
+  "_readme": "Domande frequenti mostrate nella pagina Supporto, nell'ordine dell'elenco. Per aggiungerne una basta un nuovo elemento con id univoco (diventa l'ancora #id), domanda e risposta (HTML) in entrambe le lingue. Si possono usare {{c.*}}, {{u.*}} e {{t.*}}.",
+  "items": [
+    {
+      "id": "attivare-licenza",
+      "q": {
+        "it": "Come attivo la licenza di {{c.subscription_name}}?",
+        "en": "How do I activate my {{c.subscription_name}} license?"
+      },
+      "a": {
+        "it": "<ol><li>Dopo l'acquisto ricevi da Lemon Squeezy un'email con la chiave di licenza (la trovi anche nel <a href=\"{{c.customer_portal_url}}\">portale clienti</a>).</li><li>Apri {{c.product_name}} e vai in <strong>Impostazioni › AI › Abbonamento</strong>.</li><li>Incolla la chiave e premi <strong>Attiva</strong>. Da quel momento questo Mac usa {{c.subscription_name}}.</li></ol><p>Guida completa: <a href=\"{{u.guide-license}}\">attivare e gestire la licenza</a>.</p>",
+        "en": "<ol><li>After purchase, Lemon Squeezy emails you the license key (you can also find it in the <a href=\"{{c.customer_portal_url}}\">customer portal</a>).</li><li>Open {{c.product_name}} and go to <strong>Settings › AI › Subscription</strong>.</li><li>Paste the key and click <strong>Activate</strong>. From then on this Mac uses {{c.subscription_name}}.</li></ol><p>Full guide: <a href=\"{{u.guide-license}}\">activating and managing your license</a>.</p>"
+      }
+    },
+    {
+      "id": "liberare-mac",
+      "q": {
+        "it": "Ho già {{c.max_macs}} Mac attivi: come ne libero uno?",
+        "en": "I already have {{c.max_macs}} active Macs: how do I release one?"
+      },
+      "a": {
+        "it": "<p>Sul Mac che non vuoi più usare apri <strong>Impostazioni › AI › Abbonamento</strong> e scegli <strong>Disattiva questo Mac</strong>: il posto si libera subito e puoi attivare la licenza su un altro Mac. Se quel Mac non è più disponibile (venduto, guasto, reinstallato), scrivici a <a href=\"mailto:{{c.support_email}}\">{{c.support_email}}</a> e lo liberiamo noi.</p>",
+        "en": "<p>On the Mac you no longer want to use, open <strong>Settings › AI › Subscription</strong> and choose <strong>Deactivate this Mac</strong>: the slot is released immediately and you can activate the license on another Mac. If that Mac is no longer available (sold, broken, reinstalled), email <a href=\"mailto:{{c.support_email}}\">{{c.support_email}}</a> and we'll release it for you.</p>"
+      }
+    },
+    {
+      "id": "consumo-esaurito",
+      "q": {
+        "it": "Cosa succede quando finisce il consumo mensile?",
+        "en": "What happens when the monthly allowance runs out?"
+      },
+      "a": {
+        "it": "<p>Le richieste AI tramite {{c.subscription_name}} si fermano fino all'inizio del mese successivo, quando il consumo si azzera. Le tue campagne, la wiki, le registrazioni e le esportazioni continuano a funzionare. Nel frattempo puoi passare all'AI locale (Ollama), ad Apple Intelligence o a una chiave API personale in <strong>Impostazioni › AI</strong>.</p>",
+        "en": "<p>AI requests through {{c.subscription_name}} pause until the start of next month, when the allowance resets. Your campaigns, wiki, recordings and exports keep working. Meanwhile you can switch to local AI (Ollama), Apple Intelligence or a personal API key in <strong>Settings › AI</strong>.</p>"
+      }
+    },
+    {
+      "id": "disdetta",
+      "q": {
+        "it": "Come rinnovo, cambio metodo di pagamento o disdico l'abbonamento?",
+        "en": "How do I renew, change payment method or cancel my subscription?"
+      },
+      "a": {
+        "it": "<p>Tutto dal <a href=\"{{c.customer_portal_url}}\">portale clienti di Lemon Squeezy</a>, con l'email usata per l'acquisto. Il rinnovo è automatico; dopo la disdetta l'abbonamento resta attivo fino alla fine del periodo pagato. Per i rimborsi vedi la pagina <a href=\"{{u.refunds}}\">Rimborsi</a>.</p>",
+        "en": "<p>Everything is done from the <a href=\"{{c.customer_portal_url}}\">Lemon Squeezy customer portal</a>, using the email you bought with. Renewal is automatic; after cancelling, the subscription stays active until the end of the paid period. For refunds see the <a href=\"{{u.refunds}}\">Refunds</a> page.</p>"
+      }
+    },
+    {
+      "id": "privacy-ai",
+      "q": {
+        "it": "I miei testi vengono salvati quando uso l'AI?",
+        "en": "Is my text stored when I use AI?"
+      },
+      "a": {
+        "it": "<p>Con {{c.subscription_name}} i testi passano dal nostro server solo per essere elaborati e non vengono salvati. Con Ollama restano sul tuo Mac; con una chiave API personale vanno direttamente al fornitore scelto. La trascrizione dell'audio avviene sempre sul tuo Mac. Dettagli nell'<a href=\"{{u.privacy}}\">informativa privacy</a>.</p>",
+        "en": "<p>With {{c.subscription_name}} your text passes through our server only to be processed and is not stored. With Ollama it stays on your Mac; with a personal API key it goes straight to the provider you chose. Audio transcription always happens on your Mac. Details in the <a href=\"{{u.privacy}}\">privacy policy</a>.</p>"
+      }
+    },
+    {
+      "id": "senza-abbonamento",
+      "q": {
+        "it": "Posso usare {{c.product_name}} senza abbonamento?",
+        "en": "Can I use {{c.product_name}} without a subscription?"
+      },
+      "a": {
+        "it": "<p>Sì. Tutte le funzioni sono disponibili con l'AI locale (Ollama), con Apple Intelligence o con la tua chiave API, senza costi da parte nostra. Guida: <a href=\"{{u.guide-ai-modes}}\">scegliere la modalità AI</a>.</p>",
+        "en": "<p>Yes. Every feature works with local AI (Ollama), Apple Intelligence or your own API key, at no cost from us. Guide: <a href=\"{{u.guide-ai-modes}}\">choosing an AI mode</a>.</p>"
+      }
+    }
+  ]
+}
